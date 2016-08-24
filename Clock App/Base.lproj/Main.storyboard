@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGK-PC-pff">
+                                <rect key="frame" x="220" y="257" width="161" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uGK-PC-pff" secondAttribute="height" multiplier="190:101" id="rkS-qH-dAr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <color key="textColor" red="1" green="0.16815597669999999" blue="0.25647278979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhp-BB-VSZ">
+                                <rect key="frame" x="263" y="129" width="65" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.15923816120669609" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-Fg-967">
+                                <rect key="frame" x="20" y="28" width="110" height="37"/>
+                                <state key="normal" title="Themes" backgroundImage="the-button-859346_960_720.png">
+                                    <color key="titleColor" red="0.23483244527564662" green="1" blue="0.0007692308830653527" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonThemes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="276-9d-2ka"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95349079218460853" blue="0.99588175107110666" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hhp-BB-VSZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BjL-xn-v4f"/>
+                            <constraint firstItem="uGK-PC-pff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iAl-t9-ogC"/>
+                            <constraint firstItem="uGK-PC-pff" firstAttribute="top" secondItem="hhp-BB-VSZ" secondAttribute="bottom" constant="93" id="jTE-Gu-Iop"/>
+                            <constraint firstItem="uGK-PC-pff" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rNM-tD-3Ka"/>
+                            <constraint firstItem="uGK-PC-pff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyM-7H-D5p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="day" destination="hhp-BB-VSZ" id="8dF-nw-avM"/>
+                        <outlet property="label" destination="uGK-PC-pff" id="jlx-AI-oVO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="the-button-859346_960_720.png" width="960" height="480"/>
+    </resources>
+</document>
